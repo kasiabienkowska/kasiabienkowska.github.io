@@ -8,8 +8,10 @@ body{
 main{
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    margin-top: 50px;
 }
+
 
 .information{
     width: 450px;
@@ -17,12 +19,17 @@ main{
     text-align: center;
     color: white;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 img{
-    border-radius: 50%;
-    padding: 50px;
-    
+    margin: 10px 0 50px 0;
+    width: 290px;
+    height: 290px;
+    border:2px solid #fff;
+    box-shadow: 0 5px 5px  #ccc;
+    border-radius:190px;
 }
 
 h1{
@@ -39,10 +46,12 @@ h2{
 }
 
 hr{
-    margin: 50px;
+    margin: 10px;
+    width: 400px;
 }
 
 .information > a{
+    margin-top: 10px;
     font: bold 11px Arial;
     text-decoration: none;
     background-color: #EEEEEE;
@@ -50,11 +59,16 @@ hr{
     padding: 20px 100px;
     border: 1px grey solid ;
     border-radius: 2%;
+    font-size: 16px;;
 }
 
-.information a:hover{
+.button:hover{
     background-color: black;
     color: white;
+}
+
+.button{
+    transition-duration: 1s;
 }
 
 .listofsocial{
@@ -62,8 +76,34 @@ hr{
     justify-content: center;
     align-items: center;
     margin-left: 100px;
+    align-self: center;
 }
 
 li{
     padding: 0 50px;
 }
+
+ul li a{
+    color: black;
+    margin: 0 10px;
+}
+
+
+ul li .socialicon:hover i.fas{
+    transform: translateY(-100%);
+    color:white;
+}
+
+ul li .socialicon:hover i.fab{
+    transform: translateY(-100%);
+    color:white;
+}
+
+.socialicon i.fab{
+    transition-duration: 1s;
+}
+
+.socialicon i.fas{
+    transition-duration: 1s;
+}
+
