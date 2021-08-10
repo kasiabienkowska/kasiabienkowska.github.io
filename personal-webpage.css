@@ -3,6 +3,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    max-width: 
 }
 
 main{
@@ -79,6 +80,8 @@ hr{
     align-self: center;
 }
 
+
+
 li{
     padding: 0 50px;
 }
@@ -106,4 +109,69 @@ ul li .socialicon:hover i.fab{
 .socialicon i.fas{
     transition-duration: 1s;
 }
+
+@media only screen {
+    .listofsocialmobile{
+        display: none;
+    }
+}
+
+@media (max-width: 1250px){
+    main{
+        flex-direction: column;
+    }
+
+    .navsocial{
+        width:450px;
+    }
+
+    ul.listofsocial{
+        margin:0;
+        margin-top:15px;
+    }
+
+    li{
+        padding: 0;
+        margin:0;
+    }
+
+
+    @media (max-width: 680px){
+        h1{
+            font-size: 30px;
+        }
+
+        img{
+            width: 190px;
+            height: 190px;
+        }
+
+        main{
+            margin-top:150px;
+        }
+
+        .information > a{
+            font-size: 12px;;
+            padding: 20px 50px;
+        }
+
+        hr{
+            width:300px;
+        }
+
+        .listofsocial{
+            display: none;
+        }
+
+        .listofsocialmobile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 100px;
+            align-self: center;
+        }
+
+        ul.listofsocialmobile{
+            margin:0;
+        }
 
